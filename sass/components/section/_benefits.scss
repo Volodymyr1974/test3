@@ -1,0 +1,42 @@
+.benefits__list,
+.activities__list,
+.team-member__list {
+    display: flex;
+}
+
+.benefits__icon {
+    @include centeredflex();
+    width: 270px;
+    height: 120px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bgc-color);
+    border-radius: 4px;
+}
+
+.benefits__item {
+    display: block;
+}
+
+.benefits__item:not(:last-child),
+.activities__item:not(:last-child),
+.team-member__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits__subject {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    line-height: 1.71;
+}
+
+.benefits__text,
+.team-member__position,
+.portfolio-text {
+    color: var(--secondary-text-color);
+}
