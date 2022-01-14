@@ -1,5 +1,5 @@
 .team-member {
-    background-color: var(--secondary-bgc-color);
+    display: flex;
     &__item {
         display: block;
         background-color: var(--white-color-bgc-text);
@@ -10,14 +10,14 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    &__name {
+    &__title {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.2;
         text-align: center;
         margin-bottom: 10px;
     }
-    &__position {
+    &__text {
         font-size: 16px;
         line-height: 1.2;
         text-align: center;

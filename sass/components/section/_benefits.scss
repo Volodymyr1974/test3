@@ -1,10 +1,8 @@
-.benefits__list,
-.activities__list,
-.team-member__list {
+.benefits {
     display: flex;
 }
 
-.benefits__icon {
+.benefits__box {
     @include centeredflex();
     width: 270px;
     height: 120px;
@@ -24,7 +22,7 @@
     margin-right: 30px;
 }
 
-.benefits__subject {
+.benefits__title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;

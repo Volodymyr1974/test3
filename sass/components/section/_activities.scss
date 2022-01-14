@@ -1,9 +1,9 @@
 .activities {
-    padding-top: 0;
+    display: flex;
     &__item {
         position: relative;
     }
-    &__name {
+    &__box {
         position: absolute;
         @include centeredflex();
         height: 70px;
@@ -18,13 +18,4 @@
         text-transform: uppercase;
         color: var(--white-color-bgc-text);
     }
-}
-
-.activities__title,
-.team-member__title,
-.client__title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
 }

@@ -50,6 +50,21 @@ img {
   padding-bottom: 94px;
 }
 
+.section--nopaddingtop {
+  padding-top: 0;
+}
+
+.section--otherbackground {
+  background-color: var(--secondary-bgc-color);
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -76,11 +91,16 @@ img {
   padding-bottom: 25px;
 }
 
-.page-header__box {
+.page-header__container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header__nav {
@@ -271,16 +291,14 @@ img {
   transition: background-color 250ms var(--primary-cubic), color 250ms var(--primary-cubic), box-shadow 250ms var(--primary-cubic), -webkit-box-shadow 250ms var(--primary-cubic);
 }
 
-.benefits__list,
-.activities__list,
-.team-member__list {
+.benefits {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.benefits__icon {
+.benefits__box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -312,7 +330,7 @@ img {
   margin-right: 30px;
 }
 
-.benefits__subject {
+.benefits__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -330,14 +348,17 @@ img {
 }
 
 .activities {
-  padding-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .activities__item {
   position: relative;
 }
 
-.activities__name {
+.activities__box {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -365,17 +386,11 @@ img {
   color: var(--white-color-bgc-text);
 }
 
-.activities__title,
-.team-member__title,
-.client__title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .team-member {
-  background-color: var(--secondary-bgc-color);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .team-member__item {
@@ -392,7 +407,7 @@ img {
   padding-bottom: 30px;
 }
 
-.team-member__name {
+.team-member__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -400,7 +415,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-member__position {
+.team-member__text {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -438,11 +453,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -451,6 +461,11 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   fill: #AFB1B8;
   background-color: var(--white-color-bgc-text);
   -webkit-transition: fill 250ms var(--primary-cubic), background-color 250ms var(--primary-cubic);
@@ -463,7 +478,7 @@ img {
   fill: var(--white-color-bgc-text);
 }
 
-.client__list {
+.client {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -854,12 +869,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  margin: 0;
-  width: 30px;
-  height: 30px;
-  top: 8px;
-  right: 8px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -868,6 +877,12 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1073,13 +1088,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  border: none;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -1088,6 +1096,13 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border: none;
   background-color: var(--accent-color);
   color: var(--white-color-bgc-text);
   font-weight: 700;

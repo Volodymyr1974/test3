@@ -8,8 +8,13 @@
 }
 
 // /* Навигация сайта */
-.page-header__box {
+.page-header__container {
     display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-header__nav {

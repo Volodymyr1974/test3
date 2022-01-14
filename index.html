@@ -18,7 +18,8 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
-        <div class=" page-header__box  container">
+        <!-- <div class=" page-header__box  container"> -->
+        <div class=" page-header__container">
             <nav class="page-header__nav">
                 <a href="./index.html" class="logo page-header__logo">
                 Web<span class="logo__end">Studio</span>
@@ -62,50 +63,54 @@
 
         </section>
         <!--Преимущества-->
-        <section class="benefits  section">
+        <!-- section class="benefits  section">
             <div class="container">
                 <h2 class="benefits__title   visually-hidden">Преимущества</h2>
-                <ul class="benefits__list ">
+                <ul class="benefits__list "> -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title   visually-hidden">Преимущества</h2>
+                <ul class="benefits">
                     <li class="benefits__item ">
-                        <div class="benefits__icon ">
+                        <div class="benefits__box">
                             <svg width='70' height='70'>
                             <use href="images/sprite.svg#antenna" ></use>
                      </svg>
                         </div>
-                        <h3 class="benefits__subject ">Внимание к деталям</h3>
+                        <h3 class="benefits__title">Внимание к деталям</h3>
                         <p class="benefits__text ">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
 
                     </li>
                     <li class="benefits__item ">
-                        <div class="benefits__icon ">
+                        <div class="benefits__box">
                             <svg width='70' height='70'>
                             <use href="images/sprite.svg#clock" ></use>
                      </svg>
                         </div>
 
-                        <h3 class="benefits__subject ">Пунктуальность</h3>
+                        <h3 class="benefits__title">Пунктуальность</h3>
                         <p class="benefits__text ">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 
                     </li>
                     <li class="benefits__item ">
-                        <div class="benefits__icon ">
+                        <div class="benefits__box">
                             <svg width='70' height='70'>
                              <use href="images/sprite.svg#diagram" ></use>
                      </svg>
                         </div>
 
-                        <h3 class="benefits__subject ">Планирование</h3>
+                        <h3 class="benefits__title">Планирование</h3>
                         <p class="benefits__text ">Равным образом консультация с широким активом в значительной степени обуславливает..</p>
 
                     </li>
                     <li class="benefits__item ">
-                        <div class="benefits__icon ">
+                        <div class="benefits__box">
                             <svg width='70' height='70'>
                              <use href="images/sprite.svg#astronaut" ></use>
                      </svg>
                         </div>
 
-                        <h3 class="benefits__subject ">Современные технологии</h3>
+                        <h3 class="benefits__title">Современные технологии</h3>
                         <p class="benefits__text ">Значимость этих проблем настолько очевидна, что реализация плановых заданий..</p>
 
                     </li>
@@ -114,28 +119,28 @@
         </section>
 
         <!--Чем мы занимаемся-->
-        <section class="activities  section">
+        <section class="section section--nopaddingtop">
             <div class="container">
-                <h2 class="activities__title ">Чем мы занимаемся</h2>
-                <ul class="activities__list ">
+                <h2 class="section__title ">Чем мы занимаемся</h2>
+                <ul class="activities">
 
                     <li class="activities__item ">
                         <img src="./images/tablet.jpg" alt="десктопные приложения" width="370">
-                        <div class="activities__name ">
+                        <div class="activities__box ">
                             <p class="activities__text ">Десктопные приложения </p>
                         </div>
                     </li>
 
                     <li class="activities__item ">
                         <img src="./images/phone.jpg" alt="мобильные приложения" width="370">
-                        <div class="activities__name ">
+                        <div class="activities__box ">
                             <p class="activities__text ">Мобильные приложения</p>
                         </div>
                     </li>
 
                     <li class="activities__item ">
                         <img src="./images/design.jpg" alt="дизайн решения" width="370">
-                        <div class="activities__name ">
+                        <div class="activities__box ">
                             <p class="activities__text ">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -144,18 +149,18 @@
             </div>
         </section>
         <!--Наша команда-->
-        <section class="team-member section">
+        <section class="team-member section section--otherbackground">
             <div class="container">
 
-                <h2 class="team-member__title">Наша команда</h2>
+                <h2 class="section__title">Наша команда</h2>
 
-                <ul class="team-member__list ">
+                <ul class="team-member">
 
                     <li class="team-member__item">
                         <img src="./images/foto1.jpg" class="team-member__img" alt="портрет" width="270">
                         <div class="team-member__box">
-                            <h3 class="team-member__name">Игорь Демьяненко</h3>
-                            <p class="team-member__position">Product Designer</p>
+                            <h3 class="team-member__title">Игорь Демьяненко</h3>
+                            <p class="team-member__text">Product Designer</p>
                             <ul class="socials">
                                 <Li class="socials__items">
                                     <a class="socials__link" href="#">
@@ -197,8 +202,8 @@
                     <li class="team-member__item">
                         <img src="./images/foto2.jpg" class="team-member__img" alt="портрет" width="270">
                         <div class="team-member__box">
-                            <h3 class="team-member__name">Ольга Репина</h3>
-                            <p class="team-member__position">Frontend Developer</p>
+                            <h3 class="team-member__title">Ольга Репина</h3>
+                            <p class="team-member__text">Frontend Developer</p>
                             <ul class="socials">
                                 <Li class="socials__items">
                                     <a class="socials__link" href="#">
@@ -239,8 +244,8 @@
                     <li class="team-member__item">
                         <img src="./images/foto3.jpg" class="team-member__img" alt="портрет" width="270">
                         <div class="team-member__box">
-                            <h3 class="team-member__name">Николай Тарасов</h3>
-                            <p class="team-member__position">Marketing</p>
+                            <h3 class="team-member__title">Николай Тарасов</h3>
+                            <p class="team-member__text">Marketing</p>
                             <ul class="socials">
                                 <Li class="socials__items">
                                     <a class="socials__link" href="#">
@@ -281,8 +286,8 @@
                     <li class="team-member__item">
                         <img src="./images/foto4.jpg" class="team-member__img" alt="портрет" width="270">
                         <div class="team-member__box">
-                            <h3 class="team-member__name">Михаил Ермаков</h3>
-                            <p class="team-member__position">UI Designer</p>
+                            <h3 class="team-member__title">Михаил Ермаков</h3>
+                            <p class="team-member__text">UI Designer</p>
                             <ul class="socials">
                                 <Li class="socials__items">
                                     <a class="socials__link" href="#">
@@ -324,10 +329,10 @@
         </section>
 
         <!-- Постоянные клиенты -->
-        <section class="client section">
+        <section class="section">
             <div class="container">
-                <h2 class="client__title">Постоянные клиенты</h2>
-                <ul class="client__list">
+                <h2 class="section__title">Постоянные клиенты</h2>
+                <ul class="client">
                     <li class="client__item">
                         <a class="client__link" href="#">
                             <svg width='106' height='60'>
