@@ -341,9 +341,7 @@ img {
   line-height: 1.71;
 }
 
-.benefits__text,
-.team-member__position,
-.portfolio-text {
+.benefits__text {
   color: var(--secondary-text-color);
 }
 
@@ -420,6 +418,7 @@ img {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 16px;
+  color: var(--secondary-text-color);
 }
 
 .socials {
@@ -525,7 +524,7 @@ img {
   border-color: var(--accent-color);
 }
 
-.portfolio__list {
+.filter {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -538,12 +537,12 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio__item {
+.filter__item {
   -webkit-border-radius: 4px;
           border-radius: 4px;
 }
 
-.portfolio__item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -581,19 +580,19 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work__box {
+.card-set__block {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.work {
+.card-set__box {
   position: relative;
   overflow: hidden;
 }
 
-.work__overlay {
+.card-set__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -613,29 +612,30 @@ img {
   transition: transform 250ms var(--primary-cubic), -webkit-transform 250ms var(--primary-cubic);
 }
 
-.card-set__link:hover .work__overlay,
-.card-set__link:focus .work__overlay {
+.card-set__link:hover .card-set__overlay,
+.card-set__link:focus .card-set__overlay {
   -webkit-transform: translatey(0);
       -ms-transform: translatey(0);
           transform: translatey(0);
 }
 
-.work__description {
+.card-set__description {
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color-bgc-text);
 }
 
-.work__title {
+.card-set__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
-.work__name {
+.card-set__text {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--secondary-text-color);
 }
 
 .footer {
@@ -782,7 +782,7 @@ img {
   fill: inherit;
 }
 
-.portfolio__btn {
+.filter__btn {
   background-color: var(--secondary-bgc-color);
   color: var(--primary-text-color);
   cursor: pointer;
@@ -808,7 +808,7 @@ img {
   transition: background-color 250ms var(--primary-cubic), color 250ms var(--primary-cubic), box-shadow 250ms var(--primary-cubic), -webkit-box-shadow 250ms var(--primary-cubic);
 }
 
-.portfolio__btn:hover, .portfolio__btn:focus {
+.filter__btn:hover, .filter__btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color-bgc-text);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
