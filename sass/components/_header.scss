@@ -5,6 +5,7 @@
 .page-header__logo {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 // /* Навигация сайта */
@@ -19,11 +20,17 @@
 
 .page-header__nav {
     display: flex;
+    width: 100%;
+}
+
+.page-header__menu {
+    display: flex;
+    width: 100%;
 }
 
 .site-nav {
     display: flex;
-    margin-left: 93px;
+    // margin-left: 93px;
 }
 
 .site-nav__link,

@@ -89,6 +89,7 @@ img {
 .page-header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .page-header__container {
@@ -108,6 +109,15 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+}
+
+.page-header__menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .site-nav {
@@ -115,7 +125,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav__link,
