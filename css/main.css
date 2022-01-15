@@ -752,15 +752,15 @@ img {
 }
 
 .footer-form__label {
-  margin-right: 12px;
+  display: block;
   border: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .footer-form__input {
   height: 100%;
   width: 100%;
-  margin-bottom: 20px;
   padding: 15px 16px;
   background-color: inherit;
   font-size: 16px;
