@@ -643,11 +643,16 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__box {
+.footer__container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-align: baseline;
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
@@ -683,7 +688,7 @@ img {
 }
 
 .subscription__title,
-.action__text {
+.action__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
