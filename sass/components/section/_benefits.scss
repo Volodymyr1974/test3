@@ -1,10 +1,9 @@
-.benefits {
-    display: flex;
-}
-
+// .benefits {
+//     // display: flex;
+// }
 .benefits__box {
     @include centeredflex();
-    width: 270px;
+    width: 100%;
     height: 120px;
     border: none;
     margin-bottom: 30px;
@@ -14,17 +13,20 @@
 
 .benefits__item {
     display: block;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
-.benefits__item:not(:last-child),
-.activities__item:not(:last-child),
-.team-member__item:not(:last-child) {
-    margin-right: 30px;
-}
-
+// .benefits__item:not(:last-child),
+// .activities__item:not(:last-child),
+// .team-member__item:not(:last-child) {
+//     margin-right: 30px;
+// }
 .benefits__title {
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
 }

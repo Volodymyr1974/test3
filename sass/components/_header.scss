@@ -5,26 +5,37 @@
 .page-header__logo {
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+    // margin-right: 93px;
 }
 
 // /* Навигация сайта */
 .page-header__container {
-    display: flex;
-    width: 1200px;
+    // display: flex;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .page-header__nav {
-    display: flex;
+    // display: flex;
     width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .page-header__menu {
-    display: flex;
+    // display: flex;
+    display: none;
     width: 100%;
 }
 
