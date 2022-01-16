@@ -52,6 +52,7 @@
     width: 100%;
     @media screen and (min-width: $desktop) {
         display: flex;
+        margin-left: 93px;
     }
 }
 
@@ -95,7 +96,7 @@
         width: 100%;
         height: 4px;
         left: 0;
-        bottom: -1%;
+        bottom: -208%;
         background-color: currentColor;
         border-radius: 2px;
     }
