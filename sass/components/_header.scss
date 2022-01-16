@@ -10,6 +10,7 @@
 
 // /* Навигация сайта */
 .page-header__container {
+    outline: 1px solid red;
     // display: flex;
     padding-left: 15px;
     padding-right: 15px;
@@ -36,17 +37,22 @@
     @media screen and (min-width: $tablet) {
         padding-top: 26px;
         padding-bottom: 26px;
+        display: flex;
     }
     @media screen and (min-width: $desktop) {
         padding-top: 24px;
         padding-bottom: 25px;
+        display: flex;
+        align-items: center;
     }
 }
 
 .page-header__menu {
-    // display: flex;
     display: none;
     width: 100%;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .site-nav {
@@ -57,8 +63,8 @@
 .site-nav__link,
 .contacts__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 }
 
 .site-nav__item:not(:last-child) {
