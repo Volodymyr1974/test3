@@ -1,4 +1,5 @@
 .container {
+    outline: 1px solid red;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -15,11 +16,19 @@
 }
 
 .section {
+    outline: 1px solid blue;
+    padding-left: 15px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     &--nopaddingtop {
         padding-top: 0;
-        display: none;
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
     }
     &--otherbackground {
         background-color: var(--secondary-bgc-color);
@@ -29,5 +38,10 @@
         line-height: 1.17;
         text-align: center;
         margin-bottom: 30px;
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
     }
 }
