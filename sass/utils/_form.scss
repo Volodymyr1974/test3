@@ -1,9 +1,14 @@
 .modal__header {
     text-align: center;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     margin-bottom: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal-form__label {
@@ -79,8 +84,13 @@
 
 .policy-box {
     @include centeredflex();
-    font-size: 14px;
-    line-height: 1.71;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
     color: var(--secondary-text-color);
 }
 
@@ -115,7 +125,7 @@
 }
 
 .policy-box__text {
-    margin-left: 7px;
+    margin-left: 8px;
 }
 
 .policy-box__link {
@@ -127,7 +137,10 @@
     @include centeredflex();
     width: 200px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 31px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 30px;
+    }
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
