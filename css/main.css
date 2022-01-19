@@ -191,7 +191,7 @@ img {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .page-header__btn.is-open .page-header__icon--cross {
@@ -208,7 +208,7 @@ img {
   }
 }
 
-.page-header__btn:hover {
+.page-header__btn:hover, .page-header__btn:focus {
   fill: var(--accent-color);
 }
 
@@ -224,6 +224,7 @@ img {
   .page-header__menu {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     padding: 48px 40px;
@@ -306,6 +307,10 @@ img {
 @media screen and (max-width: 767px) {
   .contacts__item {
     margin-bottom: 32px;
+  }
+  .contacts__item:first-child {
+    margin-bottom: 0;
+    margin-top: 32px;
   }
 }
 
@@ -484,8 +489,11 @@ img {
 }
 
 .social-networks__link {
+  margin-right: 20px;
   text-decoration: none;
   color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.22;
 }
 
 .address__link {

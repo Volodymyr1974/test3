@@ -18,34 +18,60 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
+
         <div class=" page-header__container">
             <nav class="page-header__nav">
                 <a href="./index.html" class="logo page-header__logo">
                 Web<span class="logo__end">Studio</span>
             </a>
-
-                <div class="page-header__menu">
+                <button type="button" class="page-header__btn color-effect " aria-expanded="false" data-menu-button>
+                <!-- <button type="button" class="page-header__btn  " aria-expanded="false" data-modal-open> -->
+                <svg width='40' height='40' aria-label="Переключатель мобильного меню">
+                    
+                        <use class="page-header__icon--cross" href="./images/sprite2.svg#cross" ></use>
+                         <use class="page-header__icon--menu" href="./images/sprite2.svg#menu" ></use>
+                </svg>
+                </button>
+                <div class="page-header__menu" data-menu>
                     <ul class="site-nav ">
                         <li class="site-nav__item">
                             <a href="./index.html" class="site-nav__link     color-effect">Студия</a> </li>
                         <li class="site-nav__item">
-                            <a href="./portfolio.html" class="site-nav__link  site-nav__link--current   color-effect">Портфолио</a> </li>
+                            <a href="./portfolio.html" class="site-nav__link  site-nav__link--current color-effect">Портфолио</a> </li>
                         <li class="site-nav__item">
                             <a href="./index.html" class="site-nav__link  color-effect">Контакты</a> </li>
                     </ul>
 
 
+
                     <ul class="contacts ">
                         <li class="contacts__item">
+                            <ul class="social-networks">
+                                <li class="social-networks_item">
+                                    <a href="./index.html" class="social-networks__link">Instagram</a>
+                                </li>
+                                <li class="social-networks_item">
+                                    <a href="./index.html" class="social-networks__link">Twitter</a>
+                                </li>
+                                <li class="social-networks_item">
+                                    <a href="./index.html" class="social-networks__link">Facebook</a>
+                                </li>
+                                <li class="social-networks_item">
+                                    <a href="./index.html" class="social-networks__link">LinkedIn</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="contacts__item">
                             <a class="contacts__link color-effect" href="mailto:info@devstudio.com">
-                                <svg class="contacts__icon " width='16' height='12'>
+                                <svg class="contacts__icon contacts__icon--mail" width='16' height='12'>
                                <use href='./images/sprite.svg#envelope'></use>
                             </svg>info@devstudio.com</a>
 
                         </li>
 
                         <li class="contacts__item">
-                            <a class="contacts__link  color-effect" href="tel:+380961111111">
+                            <a class="contacts__link  contacts__link--accent color-effect" href="tel:+380961111111">
                                 <svg class="contacts__icon " width='10' height='16'>
                                <use href='./images/sprite.svg#smartphone'></use>
                             </svg> +38 096 111 11 11</a>
@@ -285,6 +311,7 @@
 
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
