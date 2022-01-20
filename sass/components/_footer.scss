@@ -52,6 +52,15 @@
     line-height: 1.71;
 }
 
+.address__link {
+    color: var(--contacts-text-color);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
 .address__text {
     margin-bottom: 9px;
 }

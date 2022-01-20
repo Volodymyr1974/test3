@@ -3,25 +3,12 @@
         border-bottom: 1px solid #ECECEC;
     }
     
-    // .page-header__logo {
-    //     @media screen and (max-width: 767px) {
-    //         padding-top: 16px;
-    //         padding-bottom: 16px;
-    //         // margin-right: 93px;
-    //     }
-    // }
-    // /* Навигация сайта */
     .page-header__container {
         outline: 1px solid red;
-        // display: flex;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
-        // @media screen and (max-width: 767px) {
-        //     padding-top: 16px;
-        //     padding-bottom: 16px;
-        // }
         @media screen and (min-width: $mobile) {
             width: $mobile;
         }
@@ -43,44 +30,6 @@
         }
     }
     
-    // .page-header__logo.is-open {
-    //     opacity: 0;
-    //     pointer-events: none;
-    // }
-    .page-header__btn {
-        display: inline-flex;
-        margin: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        &.is-open {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            z-index: 3;
-        }
-        &.is-open .page-header__icon--cross {
-            display: block;
-        }
-        &.is-open .page-header__icon--menu {
-            display: none;
-        }
-        @media screen and(min-width:$tablet) {
-            display: none;
-        }
-        &:hover,
-        &:focus {
-            fill: var(--accent-color);
-        }
-    }
-    
-    .page-header__icon--cross {
-        display: none;
-    }
-    
-    // .page-header__btn.is-open .page-header__icon--cross {
-    //     display: block;
-    // }
     .page-header__menu {
         width: 100%;
         @media screen and (max-width: 767px) {
@@ -112,16 +61,10 @@
         }
     }
     
-    // .site-nav,
-    // .contacts {
-    //     @media screen and (max-width: 767px) {}
-    // }
     .site-nav {
         @media screen and (min-width: $tablet) {
             display: flex;
         }
-        // display: flex;
-        // // margin-left: 93px;
     }
     
     .site-nav__link {
@@ -157,7 +100,7 @@
     }
     
     .contacts__item:nth-child(2n) {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
             margin-bottom: 10px;
         }
         @media screen and (min-width: $desktop) {
@@ -192,7 +135,7 @@
             bottom: -1%;
             background-color: currentColor;
             border-radius: 2px;
-            @media screen and (min-width: 768px) and (max-width: 1199px) {
+            @media screen and (min-width: $tablet) and (max-width: 1199px) {
                 bottom: -1%;
             }
         }
@@ -221,7 +164,7 @@
         display: inline-block;
         fill: currentColor;
         margin-right: 10px;
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
             width: 10px;
             height: 14px;
             &--mail {
@@ -245,7 +188,7 @@
                 color: var(--accent-color);
             }
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             display: flex;
             align-items: center;
             font-size: 12px;
@@ -255,30 +198,6 @@
             font-size: 14px;
             line-height: 1.14;
         }
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
-    }
-    
-    .social-networks {
-        display: flex;
-        @media screen and (min-width: $tablet) {
-            display: none;
-        }
-    }
-    
-    .social-networks__link {
-        margin-right: 20px;
-        text-decoration: none;
-        color: var(--accent-color);
-        font-size: 18px;
-        line-height: 1.22;
-    }
-    
-    .address__link {
-        color: var(--contacts-text-color);
-        text-decoration: none;
         &:hover,
         &:focus {
             color: var(--accent-color);

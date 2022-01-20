@@ -1,0 +1,45 @@
+.page-header__btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    &.is-open {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 3;
+    }
+    &.is-open .page-header__icon--cross {
+        display: block;
+    }
+    &.is-open .page-header__icon--menu {
+        display: none;
+    }
+    @media screen and(min-width:$tablet) {
+        display: none;
+    }
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.page-header__icon--cross {
+    display: none;
+}
+
+.social-networks {
+    display: flex;
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.social-networks__link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 18px;
+    line-height: 1.22;
+}
