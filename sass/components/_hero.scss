@@ -1,6 +1,6 @@
 .hero,
 .footer {
-    background-color: var(--footer-color);
+    background-color: $footer-color;
 }
 
 .hero {
@@ -9,21 +9,28 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 767px) {
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headermobile/headermobile.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headermobile/headermobile2x.jpg);
     }
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headertablet.jpg);
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headertablet/headertablet.jpg);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headertablet/headertablet@2x.jpg);
+        }
     }
-    @media screen and (min-width: 1200px) {
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/office.jpg);
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerdesktop/headerdesktop.jpg);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerdesktop/headerdesktop2x.jpg);
+        }
         padding-top: 200px;
         padding-bottom: 200px;
     }
     // background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/office.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     &__title {
         color: var(--white-color-bgc-text);
         font-weight: 900;
