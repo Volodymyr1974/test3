@@ -7,7 +7,7 @@
     overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--primary-cubic);
+    transition: opacity 250ms $primary-cubic;
 }
 
 .backdrop.is-hidden {
@@ -22,7 +22,7 @@
     position: absolute;
     width: 450px;
     height: 609px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 528px;
         height: 581px;
     }
@@ -37,7 +37,7 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 250ms var(--primary-cubic);
+    transition: transform 250ms $primary-cubic;
 }
 
 .modal-close {
@@ -52,11 +52,11 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: rgba(0, 0, 0, 1);
-    background-color: var(--white-color-bgc-text);
+    background-color: $white-color-bgc-text;
     cursor: pointer;
-    transition: fill 250ms var(--primary-cubic);
+    transition: fill 250ms $primary-cubic;
     &:hover,
     &:focus {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }

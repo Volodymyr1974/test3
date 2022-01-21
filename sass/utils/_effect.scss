@@ -10,5 +10,5 @@
 }
 
 .color-effect {
-    transition: color 250ms var(--primary-cubic);
+    transition: color 250ms $primary-cubic;
 }

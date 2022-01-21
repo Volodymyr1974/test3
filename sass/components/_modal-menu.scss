@@ -21,7 +21,7 @@
     }
     &:hover,
     &:focus {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
@@ -39,7 +39,7 @@
 .social-networks__link {
     margin-right: 20px;
     text-decoration: none;
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 18px;
     line-height: 1.22;
 }

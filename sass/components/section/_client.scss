@@ -12,13 +12,10 @@
     margin-left: 30px;
     margin-top: 30px;
     height: 92px;
-    // &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: calc((100% - 6 * 15px) / 3);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: calc((100% - 12 * 15px) / 6);
     }
 }
@@ -30,10 +27,10 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
-    transition: fill 250ms var(--primary-cubic), border 250ms var(--primary-cubic);
+    transition: fill 250ms $primary-cubic, border 250ms $primary-cubic;
     &:hover,
     &:focus {
-        fill: var(--accent-color);
-        border-color: var(--accent-color);
+        fill: $accent-color;
+        border-color: $accent-color;
     }
 }

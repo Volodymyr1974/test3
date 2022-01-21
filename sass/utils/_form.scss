@@ -2,11 +2,11 @@
     text-align: center;
     font-weight: 700;
     margin-bottom: 12px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         font-size: 20px;
         line-height: 1.5;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         line-height: 1.15;
     }
 }
@@ -16,7 +16,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     margin-bottom: 20px;
 }
 
@@ -39,7 +39,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     color: inherit;
-    transition: color 250ms var(--primary-cubic);
+    transition: color 250ms $primary-cubic;
 }
 
 .modal-form__feedback {
@@ -66,7 +66,7 @@
 
 .modal-form__input:focus,
 .modal-form__feedback:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 
 .modal-form__icon {
@@ -74,11 +74,11 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    fill: var(--primary-text-color);
-    transition: fill 250ms var(--primary-cubic);
+    fill: $primary-text-color;
+    transition: fill 250ms $primary-cubic;
     .modal-form__input:focus+&,
     .modal-form__input:hover+& {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
@@ -87,11 +87,11 @@
     margin-top: 20px;
     font-size: 12px;
     line-height: 1.17;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 1.71;
     }
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
 }
 
 .policy-box__checkbox {
@@ -108,19 +108,19 @@
 .policy-box__icon {
     width: 16px;
     height: 15px;
-    border: 2px solid var(--primary-text-color);
+    border: 2px solid $primary-text-color;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-image: var(--white-color-bgc-text);
-    transition: background-image 250ms var(--primary-cubic), border 250ms var(--primary-cubic), ;
+    background-image: $white-color-bgc-text;
+    transition: background-image 250ms $primary-cubic, border 250ms $primary-cubic, ;
     .policy-box__checkbox:checked+& {
         background-image: url(../images/iconcheck.svg);
         background-size: contain;
         background-origin: border-box;
-        border: 2px solid var(--accent-color);
+        border: 2px solid $accent-color;
     }
     .policy-box__checkbox:focus+& {
-        border: 2px solid var(--accent-color);
+        border: 2px solid $accent-color;
     }
 }
 
@@ -130,7 +130,7 @@
 
 .policy-box__link {
     text-decoration-line: underline;
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .modal-form__btn {
@@ -138,22 +138,22 @@
     width: 200px;
     height: 50px;
     margin-top: 31px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-top: 30px;
     }
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     border: none;
-    background-color: var(--accent-color);
-    color: var(--white-color-bgc-text);
+    background-color: $accent-color;
+    color: $white-color-bgc-text;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: background-color 250ms var(--primary-cubic);
+    transition: background-color 250ms $primary-cubic;
     &:hover,
     &:focus {
         background-color: #188CE8;

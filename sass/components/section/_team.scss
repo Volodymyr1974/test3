@@ -1,8 +1,7 @@
     .team-member {
-        // display: flex;
         &__item {
             display: block;
-            background-color: var(--white-color-bgc-text);
+            background-color: $white-color-bgc-text;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
         }
@@ -22,40 +21,30 @@
             line-height: 1.2;
             text-align: center;
             margin-bottom: 16px;
-            color: var(--secondary-text-color);
+            color: $secondary-text-color;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             display: flex;
             margin-left: -30px;
             margin-top: -30px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
             flex-wrap: wrap;
         }
     }
     
-    // .team-member {
-    //     @media screen and (min-width: 768px) {
-    //         display: flex;
-    //         flex-wrap: wrap;
-    //         margin: -15px;
-    //     }
-    // }
     .team-member__item {
         &:not(:last-child) {
             @media screen and (max-width: 767px)and (max-width: 1199px) {
                 margin-bottom: 30px;
             }
-            // @media screen and (min-width: 1200px) {
-            //     margin-right: 30px;
-            // }
         }
-        @media screen and (min-width: 768px)and (max-width: 1199px) {
+        @media screen and (min-width: $tablet)and (max-width: 1199px) {
             width: calc((100% - 4 * 15px) / 2);
             margin-left: 30px;
             margin-top: 30px;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             width: calc((100% - 8 * 15px) / 4);
             margin-left: 30px;
             margin-top: 30px;
@@ -83,11 +72,11 @@
         height: 100%;
         border-radius: 50%;
         fill: #AFB1B8;
-        background-color: var(--white-color-bgc-text);
-        transition: fill 250ms var(--primary-cubic), background-color 250ms var(--primary-cubic);
+        background-color: $white-color-bgc-text;
+        transition: fill 250ms $primary-cubic, background-color 250ms $primary-cubic;
         &:hover,
         &:focus {
-            background-color: var(--accent-color);
-            fill: var(--white-color-bgc-text);
+            background-color: $accent-color;
+            fill: $white-color-bgc-text;
         }
     }

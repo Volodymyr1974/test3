@@ -1,8 +1,8 @@
 .benefits {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         flex-wrap: wrap;
         margin-left: -30px;
         margin-top: -30px;
@@ -15,7 +15,7 @@
     height: 120px;
     border: none;
     margin-bottom: 30px;
-    background-color: var(--secondary-bgc-color);
+    background-color: $secondary-bgc-color;
     border-radius: 4px;
 }
 
@@ -25,22 +25,17 @@
         @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             margin-right: 30px;
         }
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: calc((100% - 4 * 15px) / 2);
         margin-left: 30px;
         margin-top: 30px;
     }
 }
 
-// .benefits__item:not(:last-child),
-// .activities__item:not(:last-child),
-// .team-member__item:not(:last-child) {
-//     margin-right: 30px;
-// }
 .benefits__title {
     font-size: 14px;
     line-height: 1.14;
@@ -54,5 +49,5 @@
 }
 
 .benefits__text {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
 }
